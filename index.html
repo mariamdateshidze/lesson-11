@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="sky house" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+     
+
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="რატომ ვიყენებთ მას და საიდან მოდის ეს ტექსტი" />
+    <meta
+      property="og:description"
+      content="გავრცელებული მოსაზრებით, Lorem Ipsum შემთხვევითი ტექსტი სულაც არაა. მისი ფესვები ჯერკიდევ ჩვ. წ. აღ-მდე 45 წლის დროინდელი კლასიკური ლათინური ლიტერატურიდან მოდის. ვირჯინიის შტატში მდებარე ჰემპდენ-სიდნეის კოლეჯის პროფესორმა რიჩარდ მაკკლინტოკმა აიღო ერთ-ერთი ყველაზე იშვიათი ლათინური სიტყვა “consectetur” Lorem Ipsum-პასაჟიდან და გადაწყვიტა მოეძებნა იგი კლასიკურ ლიტერატურაში. ძიება შედეგიანი აღმოჩნდა — ტექსტი Lorem Ipsum გადმოწერილი ყოფილა ციცერონის “de Finibus Bonorum et Malorum”-ის 1.10.32 და 1.10.33 თავებიდან. ეს წიგნი ეთიკის თეორიის ტრაქტატია, რომელიც რენესანსის პერიოდში ძალიან იყო გავრცელებული. Lorem Ipsum-ის პირველი ხაზი, “Lorem ipsum dolor sit amet…” სწორედ ამ წიგნის 1.10.32 თავიდანაა. მათთვის, ვისაც აინტერესებს, ქვევით მოყვანილია Lorem Ipsum-ის ორიგინალი ნაწყვეტი 1500-იანი წლებიდან. ასევე შეგიძლიათ ნახოთ 1.10.32 და 1.10.33 თავები ციცერონის “de Finibus Bonorum et Malorum”-დან, 
+      რომელსაც თან ერთვის 1914 წელს"
+    />
+    <meta
+      property="og:image"
+      content="images/main-pic"
+    />
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fonts.css">
     <title>Sky House</title>
 </head>
 <body>
@@ -40,7 +60,7 @@
 
                         </li>
                         <li>
-                            <a href="#">კონტაქტი</a>
+                            <a class="contact-info" href="#">კონტაქტი</a>
 
                         </li>
                     </ul>
@@ -73,7 +93,7 @@
                         <img src="images/pic2.png" alt="building">
                         <img src="images/pic3.png" alt="building">
                         <img src="images/pic4.png" alt="building">
-                        <img src="images/pic5.png" alt="building">
+                        <img class="last-pic" src="images/pic5.png" alt="building">
                     </div>
                     <p>
                         ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე გამეორებადი სიტყვებია ხოლმე. შედეგად, ტექსტი ჩვეულებრივ ინგლისურს გავს, მისი წაითხვა კი შეუძლებელია. დღეს უამრავი პერსონალური საგამომცემლო პროგრამა და ვებგვერდი იყენებს Lorem Ipsum-ს, როგორც დროებით ტექსტს წყობის შესავსებად; Lorem Ipsum-ის მოძებნისას კი საძიებო სისტემები ბევრ დაუსრულებელ გვერდს გვიჩვენებენ. წლების
@@ -90,7 +110,7 @@
                          გენერირებული Lorem Ipsum არასოდეს არ არის გამეორებადი, შემთხვევითი სიტყვების ან ხუმრობების შემცველი.
                     </p>
 
-                <button type="button">
+                <button class="sent-button" type="button">
                         დამატებითი ინფორმაცია
                 </button>
                     
@@ -147,22 +167,26 @@
                         <form action="">
     
                             <div class="form-row">
-                                    
-                                <input type="text" id="user-name" placeholder="სახელი, გვარი" value="" required />
+                                <label for="user-name">სახელი, გვარი</label>
+                                <input type="text" id="user-name"  value="" required />
+                               
                             </div>
         
                             <div class="form-row">
+                                <label for="email">ელ.ფოსტა</label>
                                     
-                                <input type="text" id="email" placeholder="ელ.ფოსტა" value="" />
+                                <input type="email" id="email" value="" />
                             </div>
         
                             <div class="form-row">
+                                <label for="number">ტელეფონის ნომერი</label>
                                     
-                                <input type="number" id="number" placeholder="ტელეფონის ნომერი" required />
+                                <input type="number" id="number" required />
                             </div>
                             <div class="form-row">
+                                <label for="user-message">შეტყობინება</label>
                                     
-                                <textarea name="user-message" id="user-message" placeholder="შეტყობინება"></textarea>
+                                <textarea name="user-message" id="user-message" ></textarea>
                             </div>
         
                             <button class="sub-button" type="submit">გაგზავნა</button>
@@ -218,6 +242,8 @@
 
        
     </main>
+
+    
 
     
  
